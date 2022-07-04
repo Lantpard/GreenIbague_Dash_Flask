@@ -426,7 +426,7 @@ layout = html.Div([
 
                             , html.A([ "Restablecer"
                                 
-                            ],className="btn btn-light btn-outline-success  button2", href="/model")
+                            ],className="btn btn-light btn-outline-success  button2", href="/prediccion")
 
             ],className="formulario2")
 
