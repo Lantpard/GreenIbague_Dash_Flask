@@ -1,5 +1,5 @@
 from flask_caching import Cache
-from index import app
+from app import app
 
 #cache configuration
 TIMEOUT = 240

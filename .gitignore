@@ -129,7 +129,7 @@ dmypy.json
 .pyre/
 
 #large file
-*.pkl
+#*.pkl
 
 venv
 *.pyc
