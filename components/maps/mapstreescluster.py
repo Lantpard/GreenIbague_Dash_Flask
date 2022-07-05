@@ -35,10 +35,12 @@ class map_trees_cluster:
             m.append(dict(lat=df["latitude"].iloc[i], lon=df["longitude"].iloc[i]))
 
 
-        url = 'https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png'
+        #url = 'https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png'
+
+        #url=url
 
         layout = dl.Map([
-            dl.TileLayer(url=url),
+            dl.TileLayer(),
             # From in-memory geojson. All markers at same point forces spiderfy at any zoom level.
             dl.GeoJSON(data=dlx.dicts_to_geojson(m), cluster=True, zoomToBoundsOnClick=True,superClusterOptions={"radius": 30})
             # From hosted asset (best performance).

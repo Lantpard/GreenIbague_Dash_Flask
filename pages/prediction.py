@@ -15,7 +15,7 @@ texto1  = markformat('', file1.read())
 df = df_ibague
 
 def load_random_forest_model():
-    model = open("./data/model/finalized_model.pkl", 'rb')
+    model = open("./data/model/model.pkl", 'rb')
     return joblib.load(model)
 
 def prepare_random_forest_data(af, dn,rd,bb,i,h,a,pl,e,ep,oo,
