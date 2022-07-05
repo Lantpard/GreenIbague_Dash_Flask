@@ -5,7 +5,7 @@ import pandas as pd
 import joblib
 import sklearn
 from components.markdown.markformat import markformat
-from components.sampledf.model_data import df_ibague
+from components.sampledf.model_data import df_ibague, loaded_model
 
 register_page(__name__, path="/prediccion")
 
@@ -14,9 +14,7 @@ texto1  = markformat('', file1.read())
 
 df = df_ibague
 
-def load_random_forest_model():
-    model = open("./data/model/model.pkl", 'rb')
-    return joblib.load(model)
+
 
 def prepare_random_forest_data(af, dn,rd,bb,i,h,a,pl,e,ep,oo,
                                 re,rh,ra,oa,est,iv,rt,rg,ap,v,cr,ce,
@@ -478,8 +476,6 @@ def update_output_div(af,dn,rd,bb,i,h,a,pl,e,ep,oo,re,rh,ra,oa,est,iv,rt,rg,ap,v
         #print(prepared_data.shape[1])
         if prepared_data.shape[1]==133:
 
-            loaded_model = load_random_forest_model()
-        
             prediction = loaded_model.predict(prepared_data)
 
             salida= f'Su árbol esta: \n{prediction[0]}'
