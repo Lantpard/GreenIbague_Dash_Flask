@@ -2,8 +2,7 @@ from dash import html,dcc, callback, Input, Output, State
 import dash_bootstrap_components as dbc
 from dash_labs.plugins import register_page
 import pandas as pd
-import joblib
-import sklearn
+import joblib as jb
 from components.markdown.markformat import markformat
 from components.sampledf.model_data import df_ibague, loaded_model
 
