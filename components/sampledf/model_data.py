@@ -10,11 +10,11 @@ df_comunas = gpd.read_file('./data/dftrees/COMUNAS.geojson')
 
 def load_random_forest_model():
     #model = open("./data/model/model.pkl", 'rb')
-    pickled_model = pickle.load(open('./data/model/finalized_model_pickle.pkl', 'rb'))
-    #with open('./data/model/model.pkl', 'rb') as f:
-    #    rf = pickle.load(f)
+    #pickled_model = pickle.load(open('./data/model/finalized_model_pickle.pkl', 'rb'))
+    with open('./data/model/finalized_model_pickle.pkl', 'rb') as f:
+       rf = pickle.load(f)
     #rf=jb.load(model)
-    return pickled_model
+    return rf
 
 loaded_model = load_random_forest_model()
 
