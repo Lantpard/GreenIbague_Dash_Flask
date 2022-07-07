@@ -38,3 +38,9 @@ $ python app.py
 ``` 
 
 -----
+
+### Run the application
+
+$ python app.py
+
+-----
