@@ -3,7 +3,7 @@ La aplicación consta de varias secciones, mediante las cuales se ingresa una in
 
 Características físicas:
 
-Se debe indicar las medidas de Altura Fuste y Diámetro Normal, seleccionar si tiene raíces descubiertas y/o Bifurcación basal.
+Se debe indicar las medidas de Altura Fuste en metros y Diámetro Normal en centimetros, seleccionar si tiene raíces descubiertas y/o Bifurcación basal.
 
 Presencia de plagas:
 
@@ -19,7 +19,7 @@ Seleccionar a que riesgos esta expuesto el árbol.
 
 En los selectores debe seleccionar una opción de las disponibles, estos campos si son todos obligatorios.
 
-Por ultimo se da click sobre el boton precedir y aparecera la predicción sobre el estado sabitario del árbol.
+Por ultimo se da click sobre el boton precedir y aparecera la predicción sobre el estado sanitario del árbol.
 
 Glosario.
 

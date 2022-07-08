@@ -304,8 +304,8 @@ layout = html.Div([
                     html.Div([
                         
                         dbc.Label(["Características físicas:"],className="c1"),
-                        dbc.Input(placeholder="Altura Fuste",className="c2",name="af",id="af"),
-                        dbc.Input(placeholder="Diámetro Normal",className="c3",name="dn",id="dn"),
+                        dbc.Input(placeholder="Altura Fuste (m)",className="c2",name="af",id="af"),
+                        dbc.Input(placeholder="Diámetro Normal (cm)",className="c3",name="dn",id="dn"),
                         dbc.Checklist(options=[{'label':'Raíces Descubiertas','value':'Raices Descubiertas'}],className="c4",name="rd",id="rd"),
                         dbc.Checklist(options=[{'label':'Bifurcación Basal','value':'Bifurcacion Basal'}],className="c5",name="bb",id="bb")
                     
